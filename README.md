@@ -1,18 +1,5 @@
-<p align="center"><img src="https://i.imgur.com/DIpuNTI.jpg"></p>
+<p align="center"><img src="https://imgur.com/a/RbRmCME"></p>
 
-<p align="center">
-    <a href="https://twitter.com/thewhiteh4t">
-      <img src="https://img.shields.io/badge/-TWITTER-black?logo=twitter&style=for-the-badge">
-    </a>
-    &nbsp;
-    <a href="https://twc1rcle.com/">
-      <img src="https://img.shields.io/badge/-THE WHITE CIRCLE-black?logo=&style=for-the-badge">
-    </a>
-    &nbsp;
-    <a href="https://thewhiteh4t.github.io/">
-      <img src="https://img.shields.io/badge/-BLOG-black?logo=dialogflow&style=for-the-badge">
-    </a>
-</p>
 
 <p align="center">
   <br>
@@ -22,18 +9,18 @@
 </p>
 
 <p>
-  <a style="margin-right: 10px;" href="https://github.com/thewhiteh4t/seeker#installation">
+  <a style="margin-right: 10px;" href="https://github.com/viper081599/cyberrhodztracker#installation">
     <img src="https://dabuttonfactory.com/button.png?t=INSTALL&f=Open+Sans&ts=15&tc=000&hp=25&vp=10&c=5&bgt=unicolored&bgc=00e2ff">
   </a>
-  <a style="margin-right: 10px;" href="https://github.com/thewhiteh4t/seeker#usage">
+  <a style="margin-right: 10px;" href="https://github.com/viper081599/cyberrhodztracker#usage">
     <img src="https://dabuttonfactory.com/button.png?t=USAGE&f=Open+Sans&ts=15&tc=000&hp=25&vp=10&c=5&bgt=unicolored&bgc=00e2ff">
   </a>
-  <a href="https://github.com/thewhiteh4t/seeker#demo">
+  <a href="https://github.com/viper081599/cyberrhodztracker#demo">
     <img src="https://dabuttonfactory.com/button.png?t=DEMO&f=Open+Sans&ts=15&tc=000&hp=25&vp=10&c=5&bgt=unicolored&bgc=00e2ff">
   </a>
 </p>
 
-Concept behind Seeker is simple, just like we host phishing pages to get credentials why not host a fake page that requests your location like many popular location based websites. Read more on <a href="https://thewhiteh4t.github.io"> thewhiteh4t's Blog </a>.Seeker Hosts a fake website which asks for Location Permission and if the target allows it, we can get :
+Concept behind cyberrhodztracker is simple, just like we host phishing pages to get credentials why not host a fake page that requests your location like many popular location based websites.cyberrhodztracker Hosts a fake website which asks for Location Permission and if the target allows it, we can get :
 
 * Longitude
 * Latitude
@@ -65,7 +52,7 @@ Along with Location Information we also get **Device Information** without any p
 
 * Other tools and services offer IP Geolocation which is NOT accurate at all and does not give location of the target instead it is the approximate location of the ISP.
 
-* Seeker uses HTML API and gets Location Permission and then grabs Longitude and Latitude using GPS Hardware which is present in the device, so Seeker works best with Smartphones, if the GPS Hardware is not present, such as on a Laptop, Seeker fallbacks to IP Geolocation or it will look for Cached Coordinates.  
+* cyberrhodztracker uses HTML API and gets Location Permission and then grabs Longitude and Latitude using GPS Hardware which is present in the device, so cyberrhodztracker works best with Smartphones, if the GPS Hardware is not present, such as on a Laptop, Seeker fallbacks to IP Geolocation or it will look for Cached Coordinates.  
 
 * Generally if a user accepts location permission, Accuracy of the information received is **accurate to approximately 30 meters**
 
@@ -79,11 +66,11 @@ Along with Location Information we also get **Device Information** without any p
 Available Templates : 
 
 * NearYou
-* Google Drive (Suggested by @Akaal_no_one)
-* WhatsApp (Suggested by @Dazmed707)
+* Google Drive (Suggested by @RODEL REYES)
+* WhatsApp (Suggested by @RODEL REYES)
 * Telegram
-* Zoom (Made by @a7maadf)
-* Google reCAPTCHA (Made by @MrEgyptian)
+* Zoom (Made by @RODEL REYES)
+* Google reCAPTCHA (Made by @RODEL REYES)
 
 Create your own template ! 
 Steps to let you create your template is described in this [how-to](./createTemplate.md)
@@ -106,8 +93,8 @@ Once your template is ready, **do not forget to propose it to the community via 
 ### Kali Linux / Arch Linux / Ubuntu / Fedora / Parrot OS / Termux
 
 ```bash
-git clone https://github.com/thewhiteh4t/seeker.git
-cd seeker/
+git clone https://github.com/viper081599/cyberrhodztracker.git
+cd cyberrhodztracker/
 chmod +x install.sh
 ./install.sh
 ```
@@ -115,20 +102,20 @@ chmod +x install.sh
 ### BlackArch Linux
 
 ```bash
-sudo pacman -S seeker
+sudo pacman -S cyberrhodztracker
 ```
 
 ### Docker
 
 ```bash
-docker pull thewhiteh4t/seeker
+docker pull viper081599/cyberrhodztracker
 ```
 
 ### OSX
 ```bash
-git clone https://github.com/thewhiteh4t/seeker.git
+git clone https://github.com/viper081599/cyberrhodztracker.git
 cd seeker/
-python3 seeker.py
+python3 cyberrhodztracker.py
 ````
 
 In order to run in tunnel mode, install ngrok by running this command in the terminal:
@@ -141,9 +128,9 @@ ngrok http 8080
 ## Usage
 
 ```bash
-python3 seeker.py -h
+python3 cyberrhodztracker.py -h
 
-usage: seeker.py [-h] [-k KML] [-p PORT] [-u] [-v] [-t TEMPLATE] [-d] [--telegram token:chatId] [--webhook WEBHOOK]
+usage: cyberrhodztracker.py [-h] [-k KML] [-p PORT] [-u] [-v] [-t TEMPLATE] [-d] [--telegram token:chatId] [--webhook WEBHOOK]
 
 options:
   -h, --help                            show this help message and exit
@@ -190,7 +177,7 @@ Variables:
 ##################
 
 # Step 1 : In first terminal
-$ python3 seeker.py
+$ python3 cyberrhodztracker.py
 
 # Step 2 : In second terminal start a tunnel service such as ngrok
 $ ./ngrok http 8080
@@ -200,14 +187,14 @@ $ ./ngrok http 8080
 ###########
 
 # Ouput KML File for Google Earth
-$ python3 seeker.py -k <filename>
+$ python3 cyberrhodztracker.py -k <filename>
 
 # Use Custom Port
-$ python3 seeker.py -p 1337
+$ python3 cyberrhodztracker.py -p 1337
 $ ./ngrok http 1337
 
 # Pre-select a specific template
-$ python3 seeker.py -t 1
+$ python3 cyberrhodztracker.py -t 1
 
 ################
 # Docker Usage #
@@ -217,10 +204,10 @@ $ python3 seeker.py -t 1
 $ docker network create ngroknet
 
 # Step 2
-$ docker run --rm -it --net ngroknet --name seeker thewhiteh4t/seeker
+$ docker run --rm -it --net ngroknet --name cyberrhodztracker viper081599/cyberrhodztracker
 
 # Step 3
-$ docker run --rm -it --net ngroknet --name ngrok wernight/ngrok ngrok http seeker:8080
+$ docker run --rm -it --net ngroknet --name ngrok wernight/ngrok ngrok http cyberrhodztracker:8080
 ```
 
 ## Local Tunnels
@@ -230,10 +217,4 @@ ssh -R 80:localhost:8080 nokey@localhost.run
 ```
 as an alternative to ngrok
 
-## Demo
 
-**YouTube**
-
-<a href="https://odysee.com/@thewhiteh4t:2/seeker_v126_demo:e">
-  <img src="https://thumbnails.odycdn.com/optimize/s:1024:768/quality:85/plain/https://thumbs.odycdn.com/5ce9ed06e0ce8a995987dba0949dbc9a.webp">
-</a>
