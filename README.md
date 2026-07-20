@@ -1,4 +1,6 @@
-<p align="center"><img src="https://imgur.com/a/RbRmCME"></p>
+<p align="center">
+  <img src="images/banner.png">
+</p>
 
 
 <p align="center">
