@@ -134,8 +134,8 @@ sys.stderr = sys.__stderr__
 def banner():
     with open(META_FILE, 'r') as metadata:
         json_data = loads(metadata.read())
-        twitter_url = json_data['twitter']
-        comms_url = json_data['comms']
+        author = json_data['author']
+        version = json_data['version']
 
     art = r"""
    ██████╗██╗   ██╗██████╗ ███████╗██████╗
@@ -155,11 +155,10 @@ def banner():
                 TRACKER
 """
 
-    utils.print(f'{G}{art}{W}\n')
-    utils.print(f'{G}[>] {C}Created By   : {W}RodelReyes')
-    utils.print(f'{G} |---> {C}Twitter   : {W}{twitter_url}')
-    utils.print(f'{G} |---> {C}Community : {W}{comms_url}')
-    utils.print(f'{G}[>] {C}Version      : {W}{VERSION}\n')
+utils.print(f'{G}[>] {C}Created By   : {W}RodelReyes')
+utils.print(f'{G} |---> {C}Twitter   : {W}{twitter_url}')
+utils.print(f'{G} |---> {C}Community : {W}{comms_url}')
+utils.print(f'{G}[>] {C}Version      : {W}{VERSION}\n')
 
 
 def send_webhook(content, msg_type):
