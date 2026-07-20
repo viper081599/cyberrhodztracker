@@ -156,7 +156,8 @@ def banner():
 """
 
     utils.print(f'{G}{art}{W}\n')
-    utils.print(f'{G}[>] {C}Created By   : {W}RODEL REYES')
+    utils.print(f'{G}[>] {C}Created By   : {W}RodelReyes')
+    utils.print(f'{G} |---> {C}Community : {W}{comms_url}')
     utils.print(f'{G}[>] {C}Version      : {W}{VERSION}\n')
 
 
