@@ -116,7 +116,7 @@ docker pull viper081599/cyberrhodztracker
 ### OSX
 ```bash
 git clone https://github.com/viper081599/cyberrhodztracker.git
-cd seeker/
+cd cyberrhodztracker/
 python3 cyberrhodztracker.py
 ````
 
