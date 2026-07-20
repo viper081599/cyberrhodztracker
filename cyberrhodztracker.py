@@ -134,8 +134,8 @@ sys.stderr = sys.__stderr__
 def banner():
     with open(META_FILE, 'r') as metadata:
         json_data = loads(metadata.read())
-author = json_data['author']
-version = json_data['version']
+        author = json_data['author']
+        version = json_data['version']
 
     art = r"""
    ██████╗██╗   ██╗██████╗ ███████╗██████╗
@@ -155,10 +155,9 @@ version = json_data['version']
                 TRACKER
 """
 
-utils.print(f'{G}{art}{W}\n')
-utils.print(f'{G}[>] {C}Created By   : {W}{author}')
-utils.print(f'{G}[>] {C}Version      : {W}{version}\n')
-
+    utils.print(f'{G}{art}{W}\n')
+    utils.print(f'{G}[>] {C}Created By   : {W}{author}')
+    utils.print(f'{G}[>] {C}Version      : {W}{version}\n')
 
 def send_webhook(content, msg_type):
     if webhook is not None:
